@@ -7,7 +7,7 @@
  */
 #include "rfm70.h"
 #include "../customize.h"
-static PROGMEM uint8_t set1[][4]={
+static PROGMEM const uint8_t set1[][4]={
   {0x40, 0x4b, 0x01, 0xe2},
   {0xc0, 0x4b, 0x00, 0x00},
   {0xd0, 0xfc, 0x8c, 0x02},
@@ -23,8 +23,8 @@ static PROGMEM uint8_t set1[][4]={
   {0x00, 0x12, 0x73, 0x00},
   {0x36, 0xB4, 0x80, 0x00},
 };
-static PROGMEM uint8_t set1_14[]={0x41,0x20,0x08,0x04,0x81,0x20,0xCF,0xF7,0xFE,0xFF,0xFF};
-static PROGMEM uint8_t set0[][2]={
+static PROGMEM const uint8_t set1_14[]={0x41,0x20,0x08,0x04,0x81,0x20,0xCF,0xF7,0xFE,0xFF,0xFF};
+static PROGMEM const uint8_t set0[][2]={
   {0,0x7F}, //mask RX_DR\TX_DS\MAX_RT (we do not use IRQ!),Enable CRC ,2byte,POWER UP,PRX
   {1,0x1}, //Enable AACK only in pipe 0! Was:{1,0x3F}, //Enable auto acknowledgement data pipe5\4\3\2\1\0
   {2,0x01}, //Enable only RX pipe 0 //Enable RX Addresses pipe5\4\3\2\1\0
@@ -49,20 +49,20 @@ static PROGMEM uint8_t set0[][2]={
   {28,0x00},// No dynamic payload length! {28,0x3F},// Enable dynamic payload length data pipe5\4\3\2\1\0
   {29,0x07},// Enables Dynamic Payload Length,Enables Payload with ACK,Enables the W_TX_PAYLOAD_NOACK command 
 };
-static PROGMEM uint8_t cmd_activate[]={0x50,0x73};
-static PROGMEM uint8_t cmd_tog1[]={0xd9 | 0x06, 0x9e, 0x86, 0x0b}; //assosciated with set1[4]!
-static PROGMEM uint8_t cmd_tog2[]={0xd9 & ~0x06, 0x9e, 0x86, 0x0b};
-static PROGMEM uint8_t cmd_flush_rx[]={0xe2,0x00};
-static PROGMEM uint8_t cmd_flush_tx[]={0xe1,0x00};
-static PROGMEM uint8_t cmd_switch_cfg[]={0x50,0x53};
+static PROGMEM const uint8_t cmd_activate[]={0x50,0x73};
+static PROGMEM const uint8_t cmd_tog1[]={0xd9 | 0x06, 0x9e, 0x86, 0x0b}; //assosciated with set1[4]!
+static PROGMEM const uint8_t cmd_tog2[]={0xd9 & ~0x06, 0x9e, 0x86, 0x0b};
+static PROGMEM const uint8_t cmd_flush_rx[]={0xe2,0x00};
+static PROGMEM const uint8_t cmd_flush_tx[]={0xe1,0x00};
+static PROGMEM const uint8_t cmd_switch_cfg[]={0x50,0x53};
 
-static PROGMEM uint8_t adr0[]={SET_NUMBER,'W','G'};
+static PROGMEM const uint8_t adr0[]={SET_NUMBER,'W','G'};
 //static PROGMEM uint8_t adr1[]={SET_NUMBER,'W','G'};
 
 uint8_t USART_SPI_Transfer(uint8_t c);
 
 
-void write_pcmd(uint8_t * cmd, uint8_t len)
+void write_pcmd(uint8_t const * cmd, uint8_t len)
 {
   set_cs(1);
   set_cs(0);
@@ -123,7 +123,7 @@ void set_channel(uint8_t cnum)
 }
 
 
-void write_reg_pbuf(uint8_t reg, uint8_t * buf, uint8_t len)
+void write_reg_pbuf(uint8_t reg, uint8_t const * buf, uint8_t len)
 {
   set_cs(1);
   set_cs(0);

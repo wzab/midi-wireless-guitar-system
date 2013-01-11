@@ -329,7 +329,7 @@ void show_error(uint8_t msg)
 
 
 uint8_t packet_nr=0;
-static PROGMEM uint8_t cmd_switch_cfg[]={0x50,0x53};
+static PROGMEM const uint8_t cmd_switch_cfg[]={0x50,0x53};
 /* Main routine */
 int main(void)
 {

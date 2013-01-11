@@ -516,8 +516,8 @@ void SetupHardware(void)
   PORT_BEEPER &= ~(1<<PIN_NR_BEEPER);  
 }
 
-static PROGMEM uint8_t cmd_flush_rx[]={0xe2,0x00};
-static PROGMEM uint8_t cmd_flush_tx[]={0xe1,0x00};
+static PROGMEM const uint8_t cmd_flush_rx[]={0xe2,0x00};
+static PROGMEM const uint8_t cmd_flush_tx[]={0xe1,0x00};
 
 /** Event handler for the library USB Connection event. */
 void EVENT_USB_Device_Connect(void)

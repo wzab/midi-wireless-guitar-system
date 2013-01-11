@@ -69,7 +69,7 @@ static inline void write_reg(uint8_t reg, uint8_t val)
 }
 
 uint8_t read_reg(uint8_t reg);
-void write_pcmd(uint8_t * cmd, uint8_t len);
+void write_pcmd(uint8_t const * cmd, uint8_t len);
 void rfm70_init(void);
 void rfm70_init1(void);
 void rfm70_init2(void);

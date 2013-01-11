@@ -55,7 +55,7 @@ static inline uint8_t read_reg(uint8_t reg)
 
 void write_reg(uint8_t reg, uint8_t val);
 uint8_t read_reg(uint8_t reg);
-void write_pcmd(uint8_t * cmd, uint8_t len);
+void write_pcmd(uint8_t const * cmd, uint8_t len);
 void rfm70_init(uint8_t channel);
 void switch_to_tx_mode(void);
 void switch_to_rx_mode(void);
