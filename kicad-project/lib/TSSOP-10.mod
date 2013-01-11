@@ -1,0 +1,99 @@
+PCBNEW-LibModule-V1  czw, 23 gru 2010, 11:26:52
+$INDEX
+TSSOP-10
+$EndINDEX
+$MODULE TSSOP-10
+Po 0 0 0 15 4D1323DF 00000000 ~~
+Li TSSOP-10
+Sc 00000000
+AR 
+Op 0 0 0
+T0 50 -1822 276 276 0 69 N V 21 N"TSSOP-10"
+T1 70 1848 276 276 0 69 N V 21 N"VAL**"
+DS -591 -591 591 -591 50 21
+DS 591 -591 591 591 50 21
+DS 591 591 -591 591 50 21
+DS -591 591 -591 -591 50 21
+DC -355 355 -276 355 50 21
+$PAD
+Sh "1" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -394 925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "2" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -197 925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "3" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "4" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 197 925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "5" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 394 925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "6" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 394 -925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "7" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 197 -925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "8" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "9" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -197 -925
+.LocalClearance 79
+$EndPAD
+$PAD
+Sh "10" R 118 591 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -394 -925
+.LocalClearance 79
+$EndPAD
+$EndMODULE  TSSOP-10
+$EndLIBRARY

@@ -1,0 +1,80 @@
+Cmp-Mod V01 Created by CvPCB (2010-03-14)-final date = nie, 30 sty 2011, 13:30:26
+
+BeginCmp
+TimeStamp = /4D39EBB0;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D39EBA9;
+Reference = C2;
+ValeurCmp = 1u;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D39EB9A;
+Reference = C3;
+ValeurCmp = 180p;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D39EBA0;
+Reference = C4;
+ValeurCmp = 180p;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D39EBB6;
+Reference = C5;
+ValeurCmp = 100n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D39EBBD;
+Reference = C6;
+ValeurCmp = 1u;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D39EC4F;
+Reference = C7;
+ValeurCmp = 100n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D39EC54;
+Reference = C8;
+ValeurCmp = 1u;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D11FCE8;
+Reference = P1;
+ValeurCmp = CONN_5;
+IdModule  = SIL-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D11FCE2;
+Reference = P2;
+ValeurCmp = CONN_5;
+IdModule  = SIL-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D11FCCB;
+Reference = U1;
+ValeurCmp = CS5343;
+IdModule  = TSSOP-10;
+EndCmp
+
+EndListe
